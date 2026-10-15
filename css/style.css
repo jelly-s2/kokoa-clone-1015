@@ -1,0 +1,205 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#library-flame {
+    width: 500px;
+    overflow: hidden;
+}
+.top-bar__column {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffce33;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.search-bar__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: -30px 10px 0;
+    padding: 0 25px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+}
+.search-bar__column > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+.book-of-the-day__column {
+    padding: 0 15px;
+}
+.book-of-the-day__column > h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+}
+.book {
+    display: flex;
+    gap: 20px;
+}
+.book__cover {
+    width: 160px;
+    height: 240px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+.book__cover > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.book__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;    
+}
+.book__info > span:first-child {
+    font-size: 20px;
+    font-weight: 500;
+ }
+.book__info > span:nth-child(2) {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.3);
+ }
+.book__stars {
+    display: flex;
+    gap: 4px;
+    color: #ffce33;              
+    font-size: 15px;
+}
+.book__stars > .star--empty {
+    color: rgba(0, 0, 0, 0.1); 
+}
+.book__tags {
+    display: flex;
+    gap: 10px;
+}
+.book__tags > span {
+    padding: 8px 14px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.book__choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book__bookmark {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ffce33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book__choice > input {
+    width: 100px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+}
+.top-adventures__column {
+    padding: 0 15px;
+    overflow: hidden;
+}
+.top-adventures__column > h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+}
+.adventure__list {
+    display: flex;
+    gap: 15px;
+}
+.adventure__cover {
+    width: 120px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+.adventure__cover > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.adventure__stars {
+    display: flex;
+    gap: 4px;
+    color: #ffce33;              
+    font-size: 10px;
+}
+.adventure__stars > .star--empty {
+    color: rgba(0, 0, 0, 0.1); 
+}
+
+.popular-authors__column {
+    padding: 0 15px;
+}
+.popular-authors__column > h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0 20px;
+}
+.authors {
+    display: flex;
+    gap: 20px;
+}
+.authors__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.authors__info > span {
+    font-size: 25px;
+    font-weight: 500;
+}
+.authors__info > p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.author {
+    width: 160px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+.author > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
